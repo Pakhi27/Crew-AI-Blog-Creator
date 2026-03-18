@@ -93,12 +93,17 @@ Final Output Displayed
 ---
 
 ## 📁 Project Structure
-├── main.py              # Crew execution
-├── agents.py           # Agent definitions
-├── tasks.py            # Task definitions
-├── tools.py            # Tool setup
-├── .env                # API keys
-├── new-blog-post.md    # Generated output
+├── crew.py   
+
+├── agents.py   
+
+├── tasks.py  
+
+├── tools.py   
+
+├── .env
+
+├── new-blog-post.md   
 
 ---
 ##  Setup Instructions
@@ -110,19 +115,29 @@ cd <project-folder>
 ```
 ### 2.Create Virtual Environment
 For Windows:
+
 python -m venv myvenv
+
 myvenv\Scripts\activate
+
 For Mac/Linux:
+
 python3 -m venv myvenv
+
 source myvenv/bin/activate
 
 ### 3. Install Dependencies
+
 pip install --upgrade pip
+
 pip install -r requirements.txt
 
 ### 4. Add API Keys
+
 Create a .env file in the root directory:
+
 GROQ_API_KEY=your_groq_api_key_here
+
 SERPER_API_KEY=your_serper_api_key_here
 
 ### 5.Run the Project
@@ -130,5 +145,6 @@ python crew.py
 
 ##  Output
  -Blog printed in terminal
+ 
  -Markdown file generated: new-blog-post.md
 
